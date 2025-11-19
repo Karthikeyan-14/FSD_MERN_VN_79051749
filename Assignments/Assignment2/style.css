@@ -1,0 +1,8 @@
+    img { max-width: 100%; border-radius: 10px; }
+    .hero { background: linear-gradient(90deg, #f8f9fa 60%, rgba(0,0,0,0.03) 100%); }
+    .product-img { height: 180px; object-fit: cover; border-radius: 8px; }
+    .card-title { font-size: 1.05rem; }
+    .card-text { font-size: 0.95rem; color: #555; }
+    .nav-link:hover {
+  color: #0d6efd !important;
+}
