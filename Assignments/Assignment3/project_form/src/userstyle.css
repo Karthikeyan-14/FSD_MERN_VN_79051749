@@ -1,0 +1,139 @@
+/* ============================
+   PERFECT FORM STYLING
+   ============================ */
+
+/* Card container */
+.card.form-card {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 22px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border: 1px solid #eef0f5;
+}
+
+/* Title */
+.card.form-card h2 {
+  margin: 0 0 16px 0;
+  font-size: 1.4rem;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Form grid */
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+/* Label + Input vertical alignment */
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: #111;
+  font-size: 0.95rem;
+}
+
+/* Inputs styling */
+.form-grid input[type="text"],
+.form-grid input[type="number"],
+.form-grid input[type="file"],
+.form-grid input:not([type]) {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d8dce6;
+  background: #fff;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+/* Focus state */
+.form-grid input:focus {
+  outline: none;
+  border-color: #2b6ef6;
+  box-shadow: 0 0 0 3px rgba(43,110,246,0.15);
+}
+
+/* Make Age field smaller */
+.form-grid label:nth-child(2) input {
+  width: 150px;
+}
+
+/* Make Age field full width on small screens */
+@media (max-width: 560px) {
+  .form-grid label:nth-child(2) input {
+    width: 100%;
+  }
+}
+
+/* Preview box */
+.preview {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.preview img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  border: 1px solid #e6e9f2;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+/* Error box */
+.error {
+  color: #b91c1c;
+  background: #ffe5e5;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #ffb4b4;
+}
+
+/* Actions area */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Primary button */
+.actions button {
+  padding: 10px 16px;
+  background: #2b6ef6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(43,110,246,0.3);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.actions button:hover {
+  transform: translateY(-2px);
+}
+
+.actions button:active {
+  transform: translateY(0px);
+}
+
+/* Responsive button layout */
+@media (max-width: 650px) {
+  .actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .actions button {
+    width: 100%;
+  }
+}
